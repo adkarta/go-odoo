@@ -67,6 +67,7 @@ type SaleOrder struct {
 	WarehouseId              Many2One  `xmlrpc:"warehouse_id"`
 	WriteDate                time.Time `xmlrpc:"write_date"`
 	WriteUid                 Many2One  `xmlrpc:"write_uid"`
+	CarrierId                Many2One  `xmlrpc:"carrier_id"`
 }
 
 type SaleOrderNil struct {
@@ -132,6 +133,7 @@ type SaleOrderNil struct {
 	WarehouseId              interface{} `xmlrpc:"warehouse_id"`
 	WriteDate                interface{} `xmlrpc:"write_date"`
 	WriteUid                 interface{} `xmlrpc:"write_uid"`
+	CarrierId                interface{} `xmlrpc:"carrier_id"`
 }
 
 var SaleOrderModel string = "sale.order"
